@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Sanket Portfolio</title>
     <link rel="stylesheet" href="tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -13,7 +13,7 @@
 
 
 </head>
-<body class="bg-body text-white font-poppins pb-12">
+<body class="bg-body font-poppins pb-12">
     
     <header class="py-6">
         <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
@@ -59,9 +59,10 @@
 			</div>
             <div class="hidden md:flex space-x-12 items-center">
                 <a href="#" class="text-selected-text">Home</a>
-                <a href="#work">Work Experiences</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact"><button class="px-6 py-2 bg-theme font-bold">Contact me</button></a>
+                <a href="#work" class="text-white">Work Experiences</a>
+                <a href="#projects" class="text-white">Projects</a>
+				<a href="https://medium.com/swlh/storing-data-locally-with-room-database-and-mvvm-architecture-9a707fd16aee" class="text-white">Blogs</a>
+                <a href="#contact"><button class="px-6 py-2 bg-theme text-black font-bold">Contact me</button></a>
             </div>
             <button id="toggle-menu" class=" toggle-menu md:hidden">
                 <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="white"/></svg>
@@ -72,9 +73,10 @@
     </header>
 	<div class="hidden menu grid grid-rows-6 grid-flow-col items-center">
 		<a href="#" class="text-selected-text text-center">Home</a>
-		<a href="#work" class="text-center">Work Experiences</a>
-		<a href="#projects"class="text-center">Projects</a>
-		<a href="#contact"class="text-center"><button class="px-6 py-2 bg-theme font-bold">Contact me</button></a>
+		<a href="#work" class="text-center text-white">Work Experiences</a>
+		<a href="#projects"class="text-center text-white">Projects</a>
+		<a href="https://medium.com/swlh/storing-data-locally-with-room-database-and-mvvm-architecture-9a707fd16aee" class="text-center text-white">Blogs</a>
+		<a href="#contact"class="text-center"><button class="px-6 py-2 bg-theme text-black font-bold">Contact me</button></a>
 	</div>
 	<script>
 		const btn = document.querySelector("button.toggle-menu");
@@ -92,39 +94,48 @@
             <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
                 <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
                     <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0 text-white">Home</span>
                     </a>
                     <a href="#work" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Work</span>
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0 text-white">Work</span>
                     </a>
                     <a href="#projects" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Projects</span>
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0 text-white">Projects</span>
                     </a>
                     <a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contact</span>
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0 text-white">Contact</span>
                     </a>
                 </div>
             </nav>
 
             <div class="flex flex-col lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-18">
-                <p class="font-bold block text-2xl md:text-3xl lg:text-5xl text-center md:text-left mb-4">Sanket Sinha</p> 
-				<p class="font-normal text-1xl md:text-1xl lg:text-2xl text-center md:text-left">Android Developer</p>
+                <p class="font-bold block text-2xl md:text-3xl lg:text-5xl text-center md:text-left mb-4 text-white">Sanket Sinha</p> 
+				<div class="font-normal text-1xl md:text-1xl lg:text-2xl text-center md:text-left text-white">
+					<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+						<div class="badge">App Developer</div>
+						<div class="badge">Blogger</div>
+						<div class="badge">Artist</div>
+	
+					</div>
+				
+
+				</div>
 				<!-- <p class="font-normal text-1xl md:text-1xl lg:text-2xl text-center md:text-left"></p>
 				<p class="font-normal text-1xl md:text-1xl lg:text-2xl text-center md:text-left">Android Developer</p> -->
 			
 				
-				<p class="text-center md:text-left text-secondary mt-4">Hi, I am a final year BTech undergrad. I have extensive experience in creating and deploying apps. I like to build projects which have a positive impact on people and am obsessed with creating stuff.<br><br>
+				<p class="text-justify text-secondary mt-4 ">Hi, I am a final year BTech undergrad. I have extensive experience in creating and deploying apps. I like to build projects which have a positive impact on people and am obsessed with creating stuff.<br><br>
 
 					Being a young aspiring engineer, I possess fresh and ingenious ideas. I have tenacity and enthusiasm for work. I always find myself eager to learn new things. My zeal and perseverance have led to the success of the projects I have made and continue to make. <br><br>
 					When not making apps, you can find me drawing pencil sketches and making music.
 				</p>
 				<div class="flex justify-center md:justify-start">
 					<a href="https://drive.google.com/file/d/1sJwcZqHShHkj5JNCczERgjDloNqk5ybY/view?usp=sharing">
-						<button class="content-center px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
+						<button class="content-center px-8 py-4 bg-theme text-black font-bold mt-12 flex items-center space-x-3">
 						   <div>
 							   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-								   <path d="M14.4375 11C14.4375 11.9117 14.0753 12.786 13.4307 13.4307C12.786 14.0753 11.9117 14.4375 11 14.4375C10.0883 14.4375 9.21398 14.0753 8.56932 13.4307C7.92466 12.786 7.5625 11.9117 7.5625 11C7.5625 10.0883 7.92466 9.21398 8.56932 8.56932C9.21398 7.92466 10.0883 7.5625 11 7.5625C11.9117 7.5625 12.786 7.92466 13.4307 8.56932C14.0753 9.21398 14.4375 10.0883 14.4375 11Z" fill="white"/>
-								   <path d="M0 11C0 11 4.125 3.4375 11 3.4375C17.875 3.4375 22 11 22 11C22 11 17.875 18.5625 11 18.5625C4.125 18.5625 0 11 0 11ZM11 15.8125C12.2764 15.8125 13.5004 15.3055 14.403 14.403C15.3055 13.5004 15.8125 12.2764 15.8125 11C15.8125 9.72365 15.3055 8.49957 14.403 7.59705C13.5004 6.69453 12.2764 6.1875 11 6.1875C9.72365 6.1875 8.49957 6.69453 7.59705 7.59705C6.69453 8.49957 6.1875 9.72365 6.1875 11C6.1875 12.2764 6.69453 13.5004 7.59705 14.403C8.49957 15.3055 9.72365 15.8125 11 15.8125Z" fill="white"/>
+								   <path d="M14.4375 11C14.4375 11.9117 14.0753 12.786 13.4307 13.4307C12.786 14.0753 11.9117 14.4375 11 14.4375C10.0883 14.4375 9.21398 14.0753 8.56932 13.4307C7.92466 12.786 7.5625 11.9117 7.5625 11C7.5625 10.0883 7.92466 9.21398 8.56932 8.56932C9.21398 7.92466 10.0883 7.5625 11 7.5625C11.9117 7.5625 12.786 7.92466 13.4307 8.56932C14.0753 9.21398 14.4375 10.0883 14.4375 11Z" fill="black"/>
+								   <path d="M0 11C0 11 4.125 3.4375 11 3.4375C17.875 3.4375 22 11 22 11C22 11 17.875 18.5625 11 18.5625C4.125 18.5625 0 11 0 11ZM11 15.8125C12.2764 15.8125 13.5004 15.3055 14.403 14.403C15.3055 13.5004 15.8125 12.2764 15.8125 11C15.8125 9.72365 15.3055 8.49957 14.403 7.59705C13.5004 6.69453 12.2764 6.1875 11 6.1875C9.72365 6.1875 8.49957 6.69453 7.59705 7.59705C6.69453 8.49957 6.1875 9.72365 6.1875 11C6.1875 12.2764 6.69453 13.5004 7.59705 14.403C8.49957 15.3055 9.72365 15.8125 11 15.8125Z" fill="black"/>
 							   </svg>								
 						   </div>
 						   <span>My Resume</span>
@@ -168,7 +179,7 @@
 		<!-- Work Ex -->
 		<div class="container mt-32 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-32 w-full">
 			<section class="w-full">
-				<h2 id="work" class="secondary-title">Work Experiences</h2>
+				<h2 id="work" class="secondary-title text-white">Work Experiences</h2>
 				<p class="section-paragraph">I’ve had the pleasure of working with multiple companies, designing and implementing apps.</p>
 
 				<!-- projects -->
@@ -178,7 +189,7 @@
 						
 						<!-- Client logo -->
 						<div class="w-1/4 md:w-1/3 mb-6 lg:mb-0">
-							<img src="img/glance.png" alt="Glance">
+							<img src="img/glance_new.png" alt="Glance">
 						</div>
 
 						<!-- Client info -->
@@ -210,20 +221,21 @@
 						</div>
 
 						<!-- Client info -->
-						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-white text-3xl font-semibold">Miskaa</h3>
+						<div class="flex flex-wrap justify-center lg:block">
+							<h3 class="text-white text-3xl font-semibold text-center lg:text-left">Miskaa</h3>
 
-							<p class="text-white text-1xl font-normal mt-6 mb-8">Android Intern | Jul 2020 - Sep 2020</p>
+							<p class="text-white text-1xl font-normal mt-6 mb-8 text-center lg:text-left">Android Intern | Jul 2020 - Sep 2020</p>
 
 
-							<p class="text-secondary">Created and Worked on The Miskaa Android App, which is an AI based Kitchen Assistant application.
-								 It helps users to discover personalized food recipes and find respective recipes from a wide range of ingredients..</p>
+							<p class="text-justify text-secondary ">Created and Worked on The Miskaa Android App, which is an AI based Kitchen Assistant application.
+								 It helps users to discover personalized food recipes and find respective recipes from a wide range of ingredients.</p>
 								
 							
 								 <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-									<a href = "https://play.google.com/store/apps/details?id=com.miskaa.recipes&hl=en_US&gl=US"><div class="badge">Live App</div></a>
-									<a href = ""><div class="badge">Completion Certificate</div></a>
-									<a href = ""><div class="badge">LOR</div></a>
+									<a href = "https://play.google.com/store/apps/details?id=com.miskaa.recipes&hl=en_US&gl=US"><div class="badge text-white">Live App</div></a>
+									<a href = "https://drive.google.com/file/d/1tVdzYyuwfAtON-TdteUHthzox-PnWZb0/view"><div class="badge text-white">LOR</div></a>
+									<a href = "https://drive.google.com/file/d/1rkSoUKUPZ__YCiAXlBH7OwFy9TIU7ssm/view"><div class="badge text-white">Completion Certificate</div></a>
+									
 								</div>
 						
 							</div>
@@ -237,17 +249,17 @@
 						</div>
 
 						<!-- Client info -->
-						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-white text-3xl font-semibold">Climatify</h3>
+						<div class="flex flex-wrap justify-center lg:block">
+							<h3 class="text-white text-3xl font-semibold text-center lg:text-left">Climatify</h3>
 
-							<p class="text-white text-1xl font-normal mt-6 mb-8">Android Intern | Apr 2020 - Jun 2020</p>
+							<p class="text-white text-1xl font-normal mt-6 mb-8 text-center lg:text-left">Android Intern | Apr 2020 - Jun 2020</p>
 							
 
-							<p class="text-secondary">Created Aarogya Karan , an android app which connects people who are in urgent need for various PPEs. 
+							<p class="text-secondary text-justify">Created Aarogya Karan , an android app which connects people who are in urgent need for various PPEs. 
 								Individuals can get information about the nearest PPE providers, Hospitals, Testing Labs, Blood Banks and contact them for queries. </p>
 						
 								<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-									<a href = ""><div class="badge">LOR</div></a>
+									<a href = "https://drive.google.com/file/d/1BDzToJctXkmgAVGQQ__P87XJjpko0F5E/view"><div class="badge text-white">LOR</div></a>
 								</div>
 						
 						</div>
@@ -262,7 +274,7 @@
 		<!-- projects -->
 		<div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-32 w-full">
 			<section class="w-full">
-				<h2 id="projects" class="secondary-title">Projects</h2>
+				<h2 id="projects" class="secondary-title text-white">Projects</h2>
 				<p class="section-paragraph">I love to make apps and have made a bunch of projects in my spare time.</p>
 
 				<!-- projects -->
@@ -275,8 +287,8 @@
 						</div>
 
 						<!-- Client info -->
-						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-white text-3xl font-semibold">Pen-It | Android App</h3>
+						<div class="flex flex-wrap justify-center lg:block">
+							<h3 class="text-white text-3xl font-semibold text-center lg:text-left ">Pen-It | Android App</h3>
 
 							
 
@@ -285,10 +297,10 @@
 								</p>
 							
 								<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-									<a href="https://play.google.com/store/apps/details?id=com.sankets.penit"><div class="badge">Live App</div></a>
-									<a href="https://play.google.com/store/apps/details?id=com.sankets.penit"><div class="badge">100+ Installs</div></a>
-									<a href="https://play.google.com/store/apps/details?id=com.sankets.penit"><div class="badge">Rated 5 Star</div></a>
-									<a href="https://github.com/sanket099/PenitApp"><div class="badge">Source Code</div></a>
+									<a href="https://play.google.com/store/apps/details?id=com.sankets.penit"><div class="badge text-white">Live App</div></a>
+									<a href="https://play.google.com/store/apps/details?id=com.sankets.penit"><div class="badge text-white">100+ Installs</div></a>
+									<a href="https://play.google.com/store/apps/details?id=com.sankets.penit"><div class="badge text-white">Rated 5 Star</div></a>
+									<a href="https://github.com/sanket099/PenitApp"><div class="badge text-white">Source Code</div></a>
 								</div>
 
 								<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
@@ -308,17 +320,17 @@
 						</div>
 
 						<!-- Client info -->
-						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-white text-3xl font-semibold">Unlist | Android App</h3>
+						<div class="flex flex-wrap justify-center lg:block">
+							<h3 class="text-white text-3xl font-semibold text-center lg:text-left ">Unlist | Android App</h3>
 
 
-							<p class="text-secondary mt-4">Unlist is a personal task management app which aims to help you stay organized and manage your daily routine.
+							<p class="text-secondary mt-4 text-justify">Unlist is a personal task management app which aims to help you stay organized and manage your daily routine.
 
 								Get Started in no time and add, edit new tasks in a hassle-free manner. You may also prioritize your tasks and mark them completed according to your convenience.</p>
 						
 								<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-									<a href="https://play.google.com/store/apps/details?id=com.sankets.unlist"><div class="badge">Live App</div></a>
-									<a href="https://github.com/sanket099/Unlist-Todo-App"><div class="badge">Source Code</div></a>
+									<a href="https://play.google.com/store/apps/details?id=com.sankets.unlist"><div class="badge text-white">Live App</div></a>
+									<a href="https://github.com/sanket099/Unlist-Todo-App"><div class="badge text-white">Source Code</div></a>
 								</div>
 
 								<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
@@ -338,15 +350,15 @@
 						</div>
 
 						<!-- Client info -->
-						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-white text-3xl font-semibold">Persist | Android App</h3>
+						<div class="flex flex-wrap justify-center lg:block">
+							<h3 class="text-white text-3xl font-semibold  text-center lg:text-left ">Persist | Android App</h3>
 
 							
-							<p class="text-secondary  mt-4">Persist : Run Tracker app tracks your running distance, pace, calories, speed and more. It is a highly accurate running distance / time tracker , packed into the simplest & most gorgeous interface. It also maintains a history of your runs and improvements over time, and shows you a complete log of your running activities. You can also share your running paths and stats via all sharing apps.</p>
+							<p class="text-secondary  mt-4 text-justify">Persist : Run Tracker app tracks your running distance, pace, calories, speed and more. It is a highly accurate running distance / time tracker , packed into the simplest & most gorgeous interface. It also maintains a history of your runs and improvements over time, and shows you a complete log of your running activities. You can also share your running paths and stats via all sharing apps.</p>
 							
 							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-								<a href="https://play.google.com/store/apps/details?id=com.sankets.persist"><div class="badge">Live App</div></a>
-								<a href="https://github.com/sanket099/RunApp"><div class="badge">Source Code</div></a>
+								<a href="https://play.google.com/store/apps/details?id=com.sankets.persist"><div class="badge text-white">Live App</div></a>
+								<a href="https://github.com/sanket099/RunApp"><div class="badge text-white">Source Code</div></a>
 							</div>
 
 							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
@@ -368,17 +380,17 @@
 						</div>
 
 						<!-- Client info -->
-						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-white text-3xl font-semibold">DrawDots | Android App</h3>
+						<div class="flex flex-wrap justify-center lg:block">
+							<h3 class="text-white text-3xl font-semibold text-center lg:text-left">DrawDots | Android App</h3>
 
 							
-							<p class="text-secondary mt-4">Draw Dots is a simple to make colorful patterns using dots. The aim of the app is to provide a calm and peaceful environment away from the hassles of life. With a huge range of colors and options, you can draw all you want to experience instant therapy.
+							<p class="text-secondary mt-4 text-justify">Draw Dots is a simple to make colorful patterns using dots. The aim of the app is to provide a calm and peaceful environment away from the hassles of life. With a huge range of colors and options, you can draw all you want to experience instant therapy.
 								You can share your dot art and even set it as your wallpaper.
 								May this helps you relax :)</p>
 							
 							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-								<a href="https://play.google.com/store/apps/details?id=com.sankets.drawdots"><div class="badge">Live App</div></a>
-								<a href="https://github.com/sanket099/GenerativeArt"><div class="badge">Source Code</div></a>
+								<a href="https://play.google.com/store/apps/details?id=com.sankets.drawdots"><div class="badge text-white">Live App</div></a>
+								<a href="https://github.com/sanket099/GenerativeArt"><div class="badge text-white">Source Code</div></a>
 							</div>
 
 							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
@@ -401,15 +413,16 @@
 						</div>
 
 						<!-- Client info -->
-						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-white text-3xl font-semibold">Safe-T | Android App</h3>
+						<div class="flex flex-wrap justify-center lg:block">
+							<h3 class="text-white text-3xl font-semibold text-center lg:text-left">Safe-T | Android App</h3>
 
 							
-							<p class="text-secondary mt-4">SAFE-T aims to help the citizens in distress by using a community based network. It not only helps to ensure women safety but also encourages people to be responsible citizens and help those in need . By doing which we could make the world a better place.</p>
+							<p class="text-secondary mt-4 text-justify">SAFE-T aims to help the citizens in distress by using a community based network. It not only helps to ensure women safety but also encourages people to be responsible citizens and help those in need . By doing which we could make the world a better place.</p>
 							
 							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-								<a href="https://devfolio.co/submissions/safet-3"><div class="badge">Hackathon Participation</div></a>
-								<a href="https://github.com/sanket099/sos_"><div class="badge">Source Code</div></a>
+								<a href="https://github.com/sanket099/sos_"><div class="badge text-white">Source Code</div></a>
+								<a href="https://devfolio.co/submissions/safet-3"><div class="badge text-white">Hackathon Participation</div></a>
+								
 							</div>
 
 							<!-- <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
@@ -428,43 +441,42 @@
 		</div>
 
 
-		<div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-32 w-full">
+		<div class="container mt-10 flex justify-between items-center mx-auto px-4 md:px-14 lg:px-32 w-full">
 			<section class="w-full">
-				<h2 id="skills" class="secondary-title">Skills</h2>
+				<h2 id="skills" class="secondary-title text-white">Skills</h2>
 				<p class="section-paragraph">Some of the technologies and frameworks that I work with.</p>
 
-				<!-- projects -->
 				<div class="space-y-12 my-16">
-					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-center flex-wrap lg:flex-wrap">
+					<div class="flex justify-center mt-4 space-x-6">
 						
-							<!-- github -->
+					
 						
 							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-							width="48" height="48"
+							width="32" height="32"
 							viewBox="0 0 24 24"
 							style=" fill:#fff;">    <path d="M 13.445312 1 C 14.545312 3.193 9.5061094 4.5450937 9.0371094 6.3710938 C 8.6081094 8.0490938 12.02825 10 12.03125 10 C 11.51125 9.306 11.135281 8.7313906 10.613281 7.6503906 C 9.7312812 5.8223906 15.824312 3.937 13.445312 1 z M 17 4 C 17 4 13.199859 4.230875 13.005859 6.546875 C 12.919859 7.577875 14.004156 8.1279063 14.035156 8.8789062 C 14.061156 9.4909063 13.386719 10 13.386719 10 C 13.386719 10 14.500813 9.8295313 14.882812 8.8945312 C 15.305813 7.8575313 14.169875 7.1005313 14.296875 6.2695312 C 14.417875 5.4755312 17 4 17 4 z M 10.164062 10.001953 C 10.164062 10.001953 6 9.941625 6 11.140625 C 6 11.712506 7.1602183 12.030394 8.7636719 12.146484 C 8.1135167 12.17493 7.1992187 12.685807 7.1992188 13.185547 C 7.1992188 14.219547 12.102422 15.015859 15.732422 13.505859 L 14.476562 12.6875 C 12.026531 13.518779 7.5235922 13.25586 8.8085938 12.150391 C 10.71633 12.282905 13.247952 12.128366 15.349609 11.712891 C 15.349609 11.712891 16.234719 11.212359 16.511719 10.943359 C 13.958719 11.471359 8.2871094 11.318375 8.2871094 10.859375 C 8.2871094 10.436375 10.164062 10.001953 10.164062 10.001953 z M 18.59375 10.001953 C 18.135986 9.9821016 17.63475 10.134 17.203125 10.453125 C 18.104125 10.251125 18.865234 10.824328 18.865234 11.486328 C 18.865234 12.974328 16.800781 14.384766 16.800781 14.384766 C 16.800781 14.384766 20 14.003641 20 11.556641 C 20 10.546016 19.356689 10.035039 18.59375 10.001953 z M 9.7441406 14.341797 C 8.8481406 14.341797 8.2675781 14.963922 8.2675781 15.419922 C 8.2675781 16.830922 13.614375 16.880312 15.734375 15.445312 L 14.386719 14.576172 C 12.803719 15.327172 8.8291406 15.429797 9.7441406 14.341797 z M 5.8789062 16.693359 C 4.5902637 16.65192 4 17.327656 4 17.878906 C 4 20.810906 18 20.668828 18 17.673828 C 18 17.175828 17.457719 16.939172 17.261719 16.826172 C 18.404719 19.690172 5.671875 19.493734 5.671875 17.802734 C 5.671875 17.417734 6.345125 17.026078 7.203125 17.205078 C 7.203125 17.205078 6.8896094 16.831813 6.4746094 16.757812 C 6.2617344 16.720188 6.062998 16.699279 5.8789062 16.693359 z M 20 18.707031 C 17.799 20.936031 11.740813 22.289062 6.1328125 20.914062 C 11.766813 23.275062 19.973 21.442031 20 18.707031 z"></path></svg>
 			
 							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-								width="48" height="48"
+								width="32" height="32"
 								viewBox="0 0 24 24"
 								style=" fill:#fff;"><path d="M11.59 3L3 11.59V4c0-.552.448-1 1-1H11.59zM18.88 4.71L9.58 14l-6.46 6.46C3.04 20.32 3 20.17 3 20v-5.59L14.41 3h3.76C19.07 3 19.51 4.08 18.88 4.71zM18.586 21H5.42l7.785-7.795 6.087 6.087C19.923 19.923 19.477 21 18.586 21z"></path></svg>
 							
 								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-									width="48" height="48"
+									width="32" height="32"
 									viewBox="0 0 24 24"
 									style=" fill:#fff;">    <path d="M 7.5 1 C 7.372 1 7.2439844 1.0489844 7.1464844 1.1464844 C 6.9514844 1.3414844 6.9514844 1.6585156 7.1464844 1.8535156 L 8.4570312 3.1640625 C 6.9691108 4.2559188 6 6.0127547 6 8 L 18 8 C 18 6.0127547 17.030889 4.2559188 15.542969 3.1640625 L 16.853516 1.8535156 C 17.048516 1.6575156 17.048516 1.3424844 16.853516 1.1464844 C 16.658516 0.95148437 16.341484 0.95148438 16.146484 1.1464844 L 14.664062 2.6289062 C 13.860616 2.2295595 12.95819 2 12 2 C 11.04181 2 10.139384 2.2295595 9.3359375 2.6289062 L 7.8535156 1.1464844 C 7.7560156 1.0489844 7.628 1 7.5 1 z M 9 5 L 10 5 L 10 6 L 9 6 L 9 5 z M 14 5 L 15 5 L 15 6 L 14 6 L 14 5 z M 4 9 C 3.448 9 3 9.448 3 10 L 3 16 C 3 16.552 3.448 17 4 17 C 4.552 17 5 16.552 5 16 L 5 10 C 5 9.448 4.552 9 4 9 z M 6 9 L 6 17 C 6 17.552 6.448 18 7 18 L 8 18 L 8 21.5 C 8 22.328 8.672 23 9.5 23 C 10.328 23 11 22.328 11 21.5 L 11 18 L 13 18 L 13 21.5 C 13 22.328 13.672 23 14.5 23 C 15.328 23 16 22.328 16 21.5 L 16 18 L 17 18 C 17.552 18 18 17.552 18 17 L 18 9 L 6 9 z M 20 9 C 19.448 9 19 9.448 19 10 L 19 16 C 19 16.552 19.448 17 20 17 C 20.552 17 21 16.552 21 16 L 21 10 C 21 9.448 20.552 9 20 9 z"></path></svg>
 								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-									width="48" height="48"
+									width="32" height="32"
 									viewBox="0 0 24 24"
 									style=" fill:#fff;"><path d="M 12 2 C 6.477 2 2 6.477 2 12 C 2 15.056 3.3741563 17.787094 5.5351562 19.621094 L 9.5839844 12.582031 L 9.2949219 12.292969 C 9.1059219 12.104969 9 11.850937 9 11.585938 L 9 7.75 C 9 7.336 9.336 7 9.75 7 L 11 7 L 11 5.5 C 11 5.224 11.224 5 11.5 5 L 12.5 5 C 12.776 5 13 5.224 13 5.5 L 13 7 L 14.25 7 C 14.664 7 15 7.336 15 7.75 L 15 11.585938 C 15 11.850938 14.895031 12.105969 14.707031 12.292969 L 14.417969 12.582031 L 15.888672 15.142578 C 16.413672 14.491578 16.785641 13.706125 16.931641 12.828125 C 17.022641 12.283125 17.537031 11.915859 18.082031 12.005859 C 18.627031 12.095859 18.995297 12.61125 18.904297 13.15625 C 18.655297 14.65325 17.947453 15.968703 16.939453 16.970703 L 18.464844 19.621094 C 20.625844 17.787094 22 15.056 22 12 C 22 6.477 17.523 2 12 2 z M 18.464844 19.621094 C 17.954844 20.054094 17.403453 20.438672 16.814453 20.763672 L 18.029297 22.875 C 18.073297 22.951 18.134938 23.014594 18.210938 23.058594 L 19.457031 23.783203 C 19.493031 23.803203 19.534125 23.814453 19.578125 23.814453 C 19.716125 23.814453 19.828125 23.702453 19.828125 23.564453 L 19.828125 22.128906 C 19.827125 22.040906 19.804719 21.954906 19.761719 21.878906 L 18.464844 19.621094 z M 16.814453 20.763672 L 15.318359 18.164062 C 14.326359 18.696063 13.198 19 12 19 C 10.823 19 9.6946406 18.712063 8.6816406 18.164062 L 7.1855469 20.763672 C 8.6135469 21.549672 10.254 22 12 22 C 13.746 22 15.386453 21.549672 16.814453 20.763672 z M 7.1855469 20.763672 C 6.5955469 20.440672 6.0441563 20.054094 5.5351562 19.621094 L 4.2382812 21.878906 C 4.1942813 21.954906 4.171875 22.039953 4.171875 22.126953 L 4.171875 23.564453 C 4.171875 23.702453 4.283875 23.814453 4.421875 23.814453 C 4.465875 23.814453 4.5089219 23.80125 4.5449219 23.78125 L 5.7890625 23.056641 C 5.8650625 23.012641 5.9286563 22.949047 5.9726562 22.873047 L 7.1855469 20.763672 z M 12 9 A 1.5 1.5 0 0 0 12 12 A 1.5 1.5 0 0 0 12 9 z M 11.048828 14.048828 L 9.6796875 16.427734 C 10.389687 16.801734 11.178 17 12 17 C 12.836 17 13.620406 16.783922 14.316406 16.419922 L 12.951172 14.048828 L 12.533203 14.466797 C 12.238203 14.761797 11.761797 14.761797 11.466797 14.466797 L 11.048828 14.048828 z"></path></svg>
 
 									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-									width="48" height="48"
+									width="32" height="32"
 									viewBox="0 0 24 24"
 									style=" fill:#fff;"><path d="M4.207 13.207l1.586 1.586c.391.391 1.024.391 1.414 0L17.805 4.195C18.246 3.754 17.934 3 17.31 3h-3.896c-.265 0-.52.105-.707.293l-8.5 8.5C3.817 12.183 3.817 12.817 4.207 13.207zM17.31 12h-3.896c-.265 0-.52.105-.707.293l-4 4c-.391.391-.391 1.024 0 1.414l4 4C12.895 21.895 13.149 22 13.414 22h3.896c.624 0 .936-.754.495-1.195l-3.098-3.098c-.391-.391-.391-1.024 0-1.414l3.098-3.098C18.246 12.754 17.934 12 17.31 12z"></path></svg>
 
 									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-										width="48" height="48"
+										width="32" height="32"
 										viewBox="0 0 30 30"
 										style=" fill:#fff;">    <path d="M 13 3 C 10.791 3 9 4.791 9 7 L 9 8 L 14 8 C 14.552 8 15 8.448 15 9 C 15 9.552 14.552 10 14 10 L 9 10 L 8 10 L 7 10 C 4.791 10 3 11.791 3 14 L 3 18 C 3 20.209 4.791 22 7 22 L 8 22 L 8 17 C 8 15.346 9.346 14 11 14 L 19 14 C 19.552 14 20 13.552 20 13 L 20 7 C 20 4.791 18.209 3 16 3 L 13 3 z M 12 5 C 12.552 5 13 5.448 13 6 C 13 6.552 12.552 7 12 7 C 11.448 7 11 6.552 11 6 C 11 5.448 11.448 5 12 5 z M 22 8 L 22 13 C 22 14.654 20.654 16 19 16 L 11 16 C 10.448 16 10 16.448 10 17 L 10 23 C 10 25.209 11.791 27 14 27 L 17 27 C 19.209 27 21 25.209 21 23 L 21 22 L 16 22 C 15.448 22 15 21.552 15 21 C 15 20.448 15.448 20 16 20 L 21 20 L 22 20 L 23 20 C 25.209 20 27 18.209 27 16 L 27 12 C 27 9.791 25.209 8 23 8 L 22 8 z M 18 23 C 18.552 23 19 23.448 19 24 C 19 24.552 18.552 25 18 25 C 17.448 25 17 24.552 17 24 C 17 23.448 17.448 23 18 23 z"></path></svg>
 								
@@ -481,8 +493,8 @@
 		<!-- Hire me -->
 		<div class="container mt-10 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-32 w-full">
 			<section class="w-full">
-				<h2 id="contact" class="secondary-title">Contact me</h2>
-				<p class="section-paragraph">My inbox is always open. Whether you have a question or just want to say hello, I'll try my best to get back to you! Feel free to mail me about any relevant job updates.</p>
+				<h2 id="contact" class="secondary-title text-white">Contact me</h2>
+				<p class="section-paragraph">My inbox is always open. Whether you have a question or just want to say hello, or I don't know talk about stuff, feel free to reach out.</p>
 
 				<!-- <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24" > -->
 					<!-- <div class="space-y-12" id="contact-form">
@@ -501,17 +513,17 @@
 						<button class="px-6 py-2 bg-theme text-white font-bold" id="submit">Send it!</button>
 					</div> -->
 
-					<div class="flex justify-center">
+					<div class="flex justify-center text-black">
 						<!-- Contact info -->
 						
-						<a href="mailto:sinhasanket099@gmail.com" class="px-6 py-2 bg-theme font-bold mb-12 mt-12">Send me an Email</a>
+						<a href="mailto:sinhasanket099@gmail.com" class="px-6 py-2 bg-theme text-black font-bold mb-12 mt-12">Send me an Email</a>
 					</div>
 						<!-- Socials -->
 						<div class="flex justify-center mt-4 space-x-6">
 							<!-- github -->
 							<a href="https://github.com/sanket099">
 								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-									width="48" height="48"
+									width="32" height="32"
 									viewBox="0 0 64 64"
 									style=" fill:#ffffff;"><path d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"></path></svg>
 							</a>
@@ -519,27 +531,27 @@
 			
 							<a href="https://www.linkedin.com/in/sanket099">
 								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-										width="48" height="48"
+										width="32" height="32"
 										viewBox="0 0 24 24"
 										style=" fill:#ffffff;">    <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z"></path></svg>
 							</a>
 			
 							<a href="https://play.google.com/store/apps/dev?id=4970255065225202824">
 								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-										width="48" height="48"
+										width="32" height="32"
 										viewBox="0 0 24 24"
 										style=" fill:#fff;">    <path d="M 5.4160156 2.328125 L 12.935547 10.158203 C 13.132547 10.363203 13.45925 10.363203 13.65625 10.158203 L 15.179688 8.5742188 C 15.405688 8.3392188 15.354312 7.956875 15.070312 7.796875 C 11.137313 5.571875 6.2620156 2.811125 5.4160156 2.328125 z M 3.140625 2.8476562 C 3.055625 3.0456562 3 3.2629063 3 3.5039062 L 3 20.591797 C 3 20.788797 3.044375 20.970625 3.109375 21.140625 L 11.576172 12.324219 C 11.762172 12.131219 11.762172 11.826813 11.576172 11.632812 L 3.140625 2.8476562 z M 17.443359 9.2578125 C 17.335484 9.2729375 17.233297 9.32375 17.154297 9.40625 L 15.015625 11.632812 C 14.829625 11.825812 14.829625 12.130219 15.015625 12.324219 L 17.134766 14.529297 C 17.292766 14.694297 17.546141 14.729188 17.744141 14.617188 C 19.227141 13.777188 20.226563 13.212891 20.226562 13.212891 C 20.725562 12.909891 21.007 12.443547 21 11.935547 C 20.992 11.439547 20.702609 10.981938 20.224609 10.710938 C 20.163609 10.676937 19.187672 10.124359 17.763672 9.3183594 C 17.664172 9.2623594 17.551234 9.2426875 17.443359 9.2578125 z M 13.296875 13.644531 C 13.165875 13.644531 13.034047 13.696328 12.935547 13.798828 L 5.4746094 21.566406 C 6.7566094 20.837406 11.328781 18.249578 15.050781 16.142578 C 15.334781 15.981578 15.386156 15.599281 15.160156 15.363281 L 13.65625 13.798828 C 13.55775 13.696328 13.427875 13.644531 13.296875 13.644531 z"></path></svg>
 							</a>
 			
 							<a href="https://www.instagram.com/san_artworks/">
 								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-										width="48" height="48"
+										width="32" height="32"
 										viewBox="0 0 24 24"
 										style=" fill:#fff;">    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path></svg>
 							</a>
 							<a href="https://sinhasanket099.medium.com/">
 								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-										width="48" height="48"
+										width="32" height="32"
 										viewBox="0 0 50 50"
 										style=" fill:#fff;"><path d="M 5 4 A 1.0001 1.0001 0 0 0 4 5 L 4 45 A 1.0001 1.0001 0 0 0 5 46 L 45 46 A 1.0001 1.0001 0 0 0 46 45 L 46 5 A 1.0001 1.0001 0 0 0 45 4 L 5 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 11 13 L 11 13.5 L 12.857422 16 C 12.949422 16.109 13 16.246672 13 16.388672 L 13 31.5 C 13 31.721 12.923203 31.935422 12.783203 32.107422 L 10 35.546875 L 10 36 L 18 36 L 18 35.546875 L 15.214844 32.087891 C 15.075844 31.916891 15 31.701422 15 31.482422 L 15 18.375 L 23.304688 36 L 24.847656 36 L 24.853516 35.980469 L 32 17.878906 L 32 32.75 C 32 32.91 31.935312 33.063734 31.820312 33.177734 L 29 35.546875 L 29 36 L 40 36 L 40 35.546875 L 38.179688 33.177734 C 38.064687 33.063734 38 32.91 38 32.75 L 38 16.125 C 38 15.965 38.064687 15.811266 38.179688 15.697266 L 40 13.5 L 40 13 L 31.775391 13 L 25.996094 27.642578 L 19.097656 13 L 11 13 z M 15.621094 15 L 17.828125 15 L 24.988281 30.195312 L 23.982422 32.744141 L 23.980469 32.744141 L 15.621094 15 z M 34 15 L 36.257812 15 C 36.090813 15.348 36 15.735 36 16.125 L 36 32.75 C 36 33.188 36.113266 33.619 36.322266 34 L 33.677734 34 C 33.886734 33.619 34 33.188 34 32.75 L 34 17.878906 L 34 15 z"></path></svg>
 							</a>
